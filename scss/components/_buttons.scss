@@ -1,0 +1,42 @@
+.button {
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  display: inline-block;
+  padding: 0 14px;
+  text-align: center;
+  text-decoration: none !important;
+
+
+}
+.button--small {
+  font-size: 1.2rem;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+.button--medium {
+  font-size: 1.4rem;
+  padding: 2px 14px;
+  text-transform: uppercase;
+}
+
+.button--black {
+  background: white;
+  transition: background 0.3s ease;
+  &:hover {
+    background: lighten(white, 5%);
+    transition: background 0.3s ease;
+  }
+}
+.button--black-outline {
+  background: transparent;
+  transition: background 0.3s ease;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  &:hover {
+    background: white;
+    color: white;
+    transition: background 0.3s ease;
+  }
+}

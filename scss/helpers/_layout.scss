@@ -1,0 +1,12 @@
+.container {
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+@include mobile {
+  .container {
+    padding: 0 2rem;
+  }
+}

@@ -1,0 +1,2 @@
+<?php
+// Silentium est aureum

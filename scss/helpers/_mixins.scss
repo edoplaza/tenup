@@ -1,0 +1,95 @@
+
+
+@mixin hd {
+  @media (max-width: #{$hd-width}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: #{$laptop-width}) {
+    @content;
+  }
+}
+
+
+@mixin desktop {
+  @media (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin phablet {
+  @media (max-width: #{$phablet-width}) {
+    @content;
+  }
+}
+
+@mixin tablet-big {
+  @media (max-width: #{$tablet-big-width}) {
+    @content;
+  }
+}
+@mixin tablet-mid {
+  @media (max-width: #{$tablet-mid-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin mobile-middle {
+  @media (max-width: #{$mobile-middle-width}) {
+    @content;
+  }
+}
+
+@mixin mobile-small {
+  @media (max-width: #{$mobile-small-width}) {
+    @content;
+  }
+}
+
+@mixin desktop_hd {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+
+@mixin center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin centerX {
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@mixin centerY {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+@mixin zoom($zoom, $speed) {
+  transform: scale($zoom);
+  transform-origin: center;
+  transition: transform $speed;
+}
+
+@mixin backgroundCover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
