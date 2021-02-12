@@ -17,13 +17,16 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-  <div class="site">
-    <header class="header">
-      <div class="header__bar">
-        <nav class="header__navigation" role="navigation">
-          <?php wp_nav_menu(array('theme_location' => 'main', 'menu' => 'Main', 'container' => false)); ?>
-        </nav>
-      </div>
-      <?php get_template_part('/template-parts/common/side-menu'); ?>
-    </header>
-    <main class="main">
+  <header class="header">
+    <div class="header-inner container-wide">
+      <?php get_template_part('svg/main-logo'); ?>
+      <button class="pull" type="button">
+        <span class="pull-box">
+          <span class="pull-inner"></span>
+        </span>
+      </button>
+      <?php get_template_part('/template-parts/menu'); ?>
+    </div>
+     
+  </header>
+  <main class="main">

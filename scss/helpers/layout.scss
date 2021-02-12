@@ -5,8 +5,18 @@
   width: 100%;
 }
 
+.container-wide {
+   margin: 0 auto;
+  padding: 0 6rem;
+  width: 100%;
+
+}
+
 @include mobile {
   .container {
+    padding: 0 2rem;
+  }
+  .container-wide {
     padding: 0 2rem;
   }
 }

@@ -1,12 +1,11 @@
 .pull {
-  display: none;
   cursor: pointer;
   background: transparent;
   border: none;
   height: 42px;
   padding: 0 0 0 12px;
   margin: 0;
-  z-index: 100;
+  z-index: 101;
   .pull-box {
     display: inline-block;
     height: 26px;
@@ -18,7 +17,8 @@
       height: 3px;
       position: absolute;
       top: 50%;
-      width: 26px;
+      width: 36px;
+      border-radius: 3px;
       transition: all 0.2s;
       &::before {
         background-color: white;
@@ -29,6 +29,7 @@
         width: 26px;
         top: -10px;
         transition: all 0.2s;
+         border-radius: 3px;
       }
       &::after {
         background-color: white;
@@ -39,23 +40,28 @@
         position: absolute;
         transition: all 0.2s;
         width: 26px;
+         border-radius: 3px;
       }
     }
   }
   &.close {
     .pull-box {
       .pull-inner {
-        background-color: black;
+        background-color: white;
         height: 0;
         &:before {
-          background-color: black;
-          transform: rotate(-45deg) translate(-7px, 7px);
+          background-color: white;
+          transform: rotate(-45deg) translate(-5px, 5px);
           transition: transform 0.2s;
+          height: 6px;
+           border-radius: 0;
         }
         &:after {
-           background-color: black;
+           background-color: white;
           transform: rotate(45deg) translate(-5px, -5px);
           transition: transform 0.2s;
+          height: 6px;
+          border-radius: 0;
         }
       }
     }
@@ -63,17 +69,3 @@
 }
 
 
-
-@include desktop {
-  .pull {
-    display: block;
-    top: 0;
-    position: relative;
-
-  }
-}
-@include mobile-small {
-  .pull {
-    top: 0;
-  }
-}

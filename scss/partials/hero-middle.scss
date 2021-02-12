@@ -1,0 +1,98 @@
+.hero-middle{
+  width: 100%;
+  background: white;
+}
+
+.hero-middle-inner {
+  position: relative;
+  height: 840px;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.hero-middle-image {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 4rem;
+  img {
+    width: 600px;
+    height: auto;
+  }
+}
+
+.hero-middle-info {
+  padding: 240px 0 0 0;
+  height: 100%;
+  position: absolute;
+  right: 3rem;
+  middle: 0;
+  max-width: 510px;
+  width: 40%;
+}
+
+.hero-middle-tag {
+  color: $whitePanelText;
+}
+
+.hero-middle-heading {
+  color: $contentText;
+  margin: 0 0 2.5rem 0;
+}
+
+.hero-middle-subheading {
+  color: $contentText;
+ 
+  max-width: 600px;
+}
+
+.hero-middle-button  {
+  margin: 0 20px 0 0;
+}
+
+
+@include desktop {
+  .hero-middle-inner {
+    height: auto;
+  }
+  .hero-middle-image {
+    position: relative;
+    width: 100%;
+    transform: translate(0, 0);
+    top: 0;
+    left: 0;
+    padding: 50px 0;
+    text-align: center;
+    img {
+      width: 400px;
+      height: auto;
+    
+    }
+  }
+  .hero-middle-info {
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

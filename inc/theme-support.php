@@ -10,8 +10,7 @@
 
 function tenup_custom_register_nav_menu() {
   register_nav_menus( array(
-    'main' => 'Main',
-    'footer1' => 'Footer 1',
+    'main' => 'Main'
   ));
 }
 

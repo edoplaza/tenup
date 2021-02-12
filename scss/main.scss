@@ -10,22 +10,13 @@
 @import 'helpers/general.scss';
 @import 'helpers/layout.scss';
 
-
-
 @import 'components/buttons.scss';
-
 @import 'components/content.scss';
 
 @import 'partials/header.scss';
-
 @import 'partials/pull.scss';
 @import 'partials/footer.scss';
-
-
-
-@import 'partials/banner-home.scss';
-
-@import 'partials/entry-content.scss';
-
-
-@import 'pages/404/404.scss';
+@import 'partials/hero-top.scss';
+@import 'partials/hero-middle.scss';
+@import 'partials/banner.scss';
+@import 'partials/menu.scss';

@@ -11,10 +11,9 @@
 	?>
 
 	<?php get_header(); ?>
-	<?php include('template-parts/common/banner-home.php'); ?>
-  
 	<div class="home">
-		<div class="container">
-	 </div>
+		<?php include('template-parts/hero-top.php'); ?>
+    <?php include('template-parts/hero-middle.php'); ?>
+    <?php include('template-parts/banner.php'); ?>
   </div>
 	<?php get_footer(); ?>

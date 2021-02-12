@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  padding: 54px 0 20px 0;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@include mobile {
+  .header {
+    padding: 20px 0 10px 0;
+  }
+  
+}
